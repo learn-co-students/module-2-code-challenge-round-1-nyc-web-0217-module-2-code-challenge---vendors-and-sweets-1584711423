@@ -2,6 +2,8 @@ class VendorsController < ApplicationController
 
   def index
     @vendors = Vendor.all
+    price_sum = VendorSweet.all.reduce(0){|sum,x| sum + x.price}
+    @price_avg = price_sum / VendorSweet.all.length
   end
 
   def show 

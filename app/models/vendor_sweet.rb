@@ -10,4 +10,12 @@ class VendorSweet < ApplicationRecord
             errors.add(:price, " must be a positive number!")
         end
     end
+
+    # def unique?
+    #     VendorSweet.all.each do |vs|
+    #         if vs.vendor_id
+
+    #         end
+    #     end
+    # end
 end
