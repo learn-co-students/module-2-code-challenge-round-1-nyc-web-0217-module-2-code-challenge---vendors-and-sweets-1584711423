@@ -11,7 +11,7 @@ class VendorSweetsController < ApplicationController
             redirect_to vendors_path
         else
             flash[:errors] = vs.errors.full_messages
-            redirect_to new_vendorsweet_path
+            redirect_to new_vendor_sweet_path
         end
     end
 

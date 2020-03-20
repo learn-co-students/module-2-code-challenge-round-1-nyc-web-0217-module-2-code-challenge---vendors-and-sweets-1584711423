@@ -6,8 +6,8 @@ class VendorSweet < ApplicationRecord
     validate :negative?
 
     def negative?
-        if price < 0 || price == nil
-            errors.add(:price, "Price must be a positive number!")
+        if price.to_i < 0
+            errors.add(:price, " must be a positive number!")
         end
     end
 end
