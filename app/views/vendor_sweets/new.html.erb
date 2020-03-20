@@ -5,9 +5,7 @@ Who is the vendor <%=f.collection_select :vendor_id, @vendors,:id,:name%>
 
 What sweet they be sellin <%=f.collection_select :sweet_id,@sweets,:id,:name %>
 
-what price they be sellin it for <%=f.number_field%>
+what price they be sellin it for <%=f.number_field :price%>
 
-
-
-
-<%f.submit%>
+<%=f.submit%>
+<%end%>

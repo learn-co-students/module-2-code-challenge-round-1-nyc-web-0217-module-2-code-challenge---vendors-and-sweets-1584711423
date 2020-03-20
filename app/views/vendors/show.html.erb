@@ -1,0 +1,9 @@
+<h1>LOOK AT THIS VENDOR!!!! <%=@vendor.name%></h1>
+
+<h1> LOOK AT ALL THE SWEETS HE BE SELLIN </h1>
+<ul>
+<%@vendor.all_dem_sweets.each do |sweet|%>
+    <li><%=link_to sweet.name, sweet_path(sweet)%></li>
+<%end %>
+
+</ul>

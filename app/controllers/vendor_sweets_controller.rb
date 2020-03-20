@@ -2,7 +2,7 @@ class VendorSweetsController < ApplicationController
 
     def new
         @vendorsweet = VendorSweet.new
-        @sweets = Sweets.all 
+        @sweets = Sweet.all 
         @vendors = Vendor.all 
     end 
 
@@ -13,7 +13,7 @@ class VendorSweetsController < ApplicationController
            
             redirect_to @vendor
         else 
-
+            redirect_to new_vendor_sweet_path
         end 
 
 
@@ -22,6 +22,6 @@ class VendorSweetsController < ApplicationController
     private
 
     def vs_permitted_params
-     params.require(:vendorsweet).permit!
+     params.require(:vendor_sweet).permit!
     end 
 end
