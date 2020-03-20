@@ -1,1 +1,8 @@
 <h1>LOOK HOW SWEET <%=@sweet.name%> REALLY IS!!! </h1>
+
+<h1> CHECK OUT ALL THE VENDORS THAT ARE PUSHING <%=@sweet.name%></h1>
+<ul>
+<%@sweet.all_dem_vendors.each do |vendor| %>
+ <li><%=link_to vendor.name, vendor_path(vendor)%> </li>
+<%end%>
+</ul>

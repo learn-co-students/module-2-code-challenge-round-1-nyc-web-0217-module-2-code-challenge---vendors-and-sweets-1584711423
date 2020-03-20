@@ -7,3 +7,5 @@
 <%end %>
 
 </ul>
+
+<%=@vendor.vendor_sweets.reduce(0){|sum,sweet|sum+sweet.price}/@vendor.vendor_sweets.length%>

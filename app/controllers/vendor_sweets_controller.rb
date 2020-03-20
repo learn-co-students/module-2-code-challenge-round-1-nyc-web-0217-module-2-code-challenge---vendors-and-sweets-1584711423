@@ -13,11 +13,13 @@ class VendorSweetsController < ApplicationController
            
             redirect_to @vendor
         else 
+            flash[:errors] = @vendorsweet.errors.full_messages
             redirect_to new_vendor_sweet_path
         end 
 
-
     end 
+
+
 
     private
 
