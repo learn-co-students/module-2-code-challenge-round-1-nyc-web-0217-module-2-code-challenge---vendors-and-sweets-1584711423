@@ -1,2 +1,11 @@
 <h1>Vendors Show Page</h1>
 <%= @vendor.name %>
+
+<h2>Sweets <%= @vendor.name %>'s Sells</h2>
+<% @vendor.sweets.each do |sweet| %>
+<ul>
+	<li>
+	<%= link_to sweet.name, sweet %>
+	</li>
+</ul>
+<% end  %>
