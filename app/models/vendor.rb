@@ -1,4 +1,4 @@
 class Vendor < ApplicationRecord
-    has_many :vendorsweeets
-    has_many :sweets, through: :vendorsweets
+    has_many :vendor_sweets
+    has_many :sweets, through: :vendor_sweets
 end

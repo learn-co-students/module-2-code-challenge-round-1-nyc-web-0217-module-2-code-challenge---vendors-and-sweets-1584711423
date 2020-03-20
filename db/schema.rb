@@ -18,16 +18,16 @@ ActiveRecord::Schema.define(version: 20200320010101) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "vendors", force: :cascade do |t|
-    t.string "name"
+  create_table "vendor_sweets", force: :cascade do |t|
+    t.integer "vendor_id"
+    t.integer "sweet_id"
+    t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "vendorsweets", force: :cascade do |t|
-    t.integer "vendor_id"
-    t.integer "sweet_id"
-    t.integer "price"
+  create_table "vendors", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
