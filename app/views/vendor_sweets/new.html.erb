@@ -1,3 +1,13 @@
+
+<% if flash[:errors] %>
+
+<% flash[:errors].each do |error| %>
+    <p><%= error %><p/>
+
+ <% end %>
+
+<% end %>
+
 <h1>Create a new Vendor Sweet!</h1>
 <%= form_for @vendor_sweet do |f| %>
 <%= f.label :vendor_id %>
