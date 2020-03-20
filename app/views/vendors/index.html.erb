@@ -1,6 +1,18 @@
 <h1>All Vendors</h1>
 
 
+<h3>Sweets' average price</h3>
+
+<ul>
+  <% @sweets.each do |sweet| %>
+    <li>
+      <%= sweet.name %> | average price: $<%=sweet.avg_price.to_f %>
+    </li>
+  <% end  %>
+</ul>
+
+
+<h3>Vendors </h3>
 
 <ul>
   <% @vendors.each do |vendor| %>
@@ -9,3 +21,9 @@
     </li>
   <% end  %>
 </ul>
+
+
+<%= link_to "Check all the sweets" ,sweets_path %>
+<br>
+<br>
+<%= button_to "Create vendor to sweet" ,new_vendor_sweet_path, method: :get %>
