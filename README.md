@@ -1,4 +1,4 @@
-# Rails Code Challenge - Sweets Vendors
+rails# Rails Code Challenge - Sweets Vendors
 
 For this assessment, you'll be working with a vendors and sweets domain.
 
@@ -65,6 +65,8 @@ Update the schema and models to add the `VendorSweet` model. It should have:
 
 In the rails console, check that your code works by creating your first `VendorSweet` with a given `Sweet`, `Vendor`, and price.
 
+
+COMPLETE--------------------------------------
 ### 2. VendorSweet Create Form
 
 A user should be able to visit a page to link a vendor and a sweet. The form should let them:
@@ -76,6 +78,8 @@ A user should be able to visit a page to link a vendor and a sweet. The form sho
 
 Once the `VendorSweet` is created, the user should be redirected to the selected vendor's show page.
 
+COMPLETE-------------------------------------
+
 ### 3. Vendor show page
 
 The show page for a Vendor should include:
@@ -83,6 +87,8 @@ The show page for a Vendor should include:
 - the Vendor's name (ie. Insomnia Cookies)
 - a list of the Sweets that they sell
 - each Sweet in the list should link to that Sweet's show page
+
+COMPLETE---------------------------------------
 
 ### 4. Sweet Show page
 
@@ -92,13 +98,19 @@ The Sweet's show page should include:
 - a list of Vendors that sell this Sweet
 - each Vendor in the list should link to that Vendor's show page
 
+COMPLETE----------------------------------------
 ### 5. Vendor Index page links
 
 On the Vendors index page, we should see a list of vendor's names. Each name should link to the Vendor's show page.
 
+COMPLETE------------------------------------------
+
 ### 6. Sweets index page links
 
 On the Sweets index page, we should see a list of sweet's names. Each name should link to the Sweet's show page.
+
+COMPLETE------------------------------------------
+
 
 ### 7. VendorSweet Validations
 

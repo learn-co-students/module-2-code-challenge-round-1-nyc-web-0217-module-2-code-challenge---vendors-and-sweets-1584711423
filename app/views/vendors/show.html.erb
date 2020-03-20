@@ -1,0 +1,7 @@
+<h1> This is your Vendor </h1>
+<h3><%= @vendor.name %><h3>
+<h4>LIST OF SWEETS<h4>
+<% @vendor.sweets.uniq.each do |sweet|%>
+<p><%= link_to sweet.name, sweet_path(sweet.id) %></p>
+
+<%end %>
