@@ -1,0 +1,16 @@
+<html>
+<h1>Welcome to VendorSweets!<h1>
+<ol>
+<%= form_for @vendorsweet do |vs|%>
+<%= vs.label :vendor_id%>
+<%= vs.collection_select :vendor_id, @vendors, :id, :name%>
+
+<%= vs.label :sweet_id%>
+<%= vs.collection_select :sweet_id, @sweets, :id, :name%>
+
+<%=vs.label :price%>
+<%= vs.text_field :price %>
+<%= vs.submit%>
+</ol>
+<%end%>
+</html>
