@@ -5,7 +5,7 @@ class VendorsController < ApplicationController
   end
 
   def show
-    @vendor = Vender.find(params[:id])
+    @vendor = Vendor.find(params[:id])
   end
 
 end
