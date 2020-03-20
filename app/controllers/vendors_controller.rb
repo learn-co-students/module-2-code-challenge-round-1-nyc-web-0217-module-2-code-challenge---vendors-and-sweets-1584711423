@@ -6,6 +6,7 @@ class VendorsController < ApplicationController
 
   def show 
     @vendor = Vendor.find(params[:id])
-     = VemdorSweets.all.select(|vs| vs.vendor_id == @vendor.id)
+    vs_arr = VendorSweet.all.select{|vs| vs.vendor_id == @vendor.id}
+    @sweets = vs_arr.map {|vs| Sweet.find(vs.sweet_id)}
   end
 end
