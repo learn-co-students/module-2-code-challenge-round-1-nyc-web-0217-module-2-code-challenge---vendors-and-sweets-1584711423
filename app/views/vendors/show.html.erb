@@ -1,6 +1,7 @@
-<%=@vendor.name%>
+<%=@vendor.name%><br>
 
+<p><%=link_to "Add sweet", new_vendor_sweet_path%></p>
  <%@vendor.sweets.each do |sweet|%>
-    <li><%= sweet.name%></li>
+    <li><%= link_to sweet.name, sweet_path(sweet)%></li>
 
     <%end%>
