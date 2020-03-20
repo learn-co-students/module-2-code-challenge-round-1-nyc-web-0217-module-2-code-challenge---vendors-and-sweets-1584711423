@@ -1,0 +1,11 @@
+<h1> New Sweet Vendor! </h1>
+
+<%= form_for @vendorsweet do |f| %>
+    <li> f.label Select Vendor </li>
+    <li> f.collection_select :vendor_id, @vendors, :id, :name </li>
+    <li> f.label Select Vendor </li>
+    <li> f.collection_select :sweet_id, @sweets, :id, :name</li> 
+    <li> f.label Enter Sweet Price</li>
+    <li> f.text_field :price </li>
+    <li> f.submit </li>
+<% end %>
