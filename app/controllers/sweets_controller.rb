@@ -4,6 +4,7 @@ class SweetsController < ApplicationController
   end
 
   def show
+    @sweet=Sweet.find(params[:id])
   end
-  
+
 end
