@@ -1,3 +1,10 @@
+<!-- Displays validate errors -->
+<% if flash[:errors] %>
+	<% flash[:errors].each do |error| %>
+		<%= error %>
+	<% end %>
+<% end %>
+
 <%= form_for @vendors_sweet do |f| %>
 <%= f.label :price %> <br>
 <%= f.text_field :price %> <br>
@@ -5,7 +12,7 @@
 <%= f.label :vendor_id %> <br>
 <%= f.collection_select :vendor_id, Vendor.all, :id, :name %> <br>
 
-<%= f.label :vendor_id %> <br>
+<%= f.label :sweet_id %> <br>
 <%= f.collection_select :sweet_id, Sweet.all, :id, :name %> <br>
 <%= f.submit %>
 <% end %>

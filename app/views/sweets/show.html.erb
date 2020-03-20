@@ -1,3 +1,12 @@
-<h1>Sweet show page</h1>
+<h1>Sweet Info!</h1>
 
 <%= @sweet.name %>
+
+<h2>Vendors that sell: <%= @sweet.name %></h2>
+<% @sweet.vendors.each do |vendor| %>
+<ul>
+	<li>
+	<%= link_to vendor.name, vendor %>
+	</li>
+</ul>
+<% end  %>
