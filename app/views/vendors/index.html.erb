@@ -5,3 +5,14 @@
     <li><%= link_to vendor.name, vendor %></li>
   <% end  %>
 </ul>
+
+<!-- Average Price for all Sweets -->
+
+<!-- Average price per vendor -->
+<!-- Dislpays next to vendor name -->
+<h3>Average Price Per Vendor</h3>
+  <% @vendors.each do |vendor| %>
+    <%= vendor.name %>
+    <%= vendor.average_price %> <br>
+  <% end %>
+
