@@ -2,8 +2,8 @@ class VendorSweetsController < ApplicationController
     def new
         @vendor_sweet = VendorSweet.new
 
-        @vendors = Vendors.all
-        @sweets = Sweets.all
+        @vendors = Vendor.all
+        @sweets = Sweet.all
     end
 
     def create
