@@ -1,9 +1,7 @@
-<html>
-<h1>Welcome to <%=@vendor%></h1>
-<ol>
 
-<%=@vendor.name%>
-<%=@vendor.sweets.name%>
+<h1>Welcome to <%=@vendor.name%></h1>
+<%=@vendor.sweets.map do |vend|%>
+<li><%= vend.name%></li>
+ <%= link_to sweet.name, sweet_path(sweet)%>
+<%end%>
 
-</ol>
-</html>

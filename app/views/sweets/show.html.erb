@@ -1,0 +1,5 @@
+<h1>Welcome to <%=@sweet.name%></h1>
+<%=@sweet.vendors.map do |sweet|%>
+<li><%= sweet.name%></li>
+<%# <%= link_to "sweet", new_sweet_path(@sweet) %>
+<%end%>

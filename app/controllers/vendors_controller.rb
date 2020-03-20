@@ -5,6 +5,6 @@ class VendorsController < ApplicationController
   end
   def show
     @vendor = Vendor.find(params[:id])
-    redirect_to vendors_path
   end
+  
 end

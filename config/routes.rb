@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # get '/sweets', to: "sweets#index", as: "sweets"
   # get '/vendors', to: "vendors#index", as: "vendors"
-  resource :vendors
-  resource :sweets
-  resource :vendorsweets
+   resources :vendors
+  #  get '/vendors/:id', to: "vendors#show", as:"vendor"
+  resources :sweets
+  resources :vendorsweets
 
 end
