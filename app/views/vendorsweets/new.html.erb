@@ -1,4 +1,11 @@
 <h2>New Vendor and Sweet</h2>
+ <% if @vendorsweet.errors.any? %>
+    <h2> There are errors </h2>
+    <ul>
+        <% @vendorsweet.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+        <% end %>
+    <% end %>
 
 <%= form_for @vendorsweet do |f| %>
 

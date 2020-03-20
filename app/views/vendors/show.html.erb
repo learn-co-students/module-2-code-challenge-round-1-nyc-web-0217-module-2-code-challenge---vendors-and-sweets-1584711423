@@ -1,6 +1,6 @@
 <h2><%= @vendor.name %></h2><br>
     <%= @vendor.sweets.each do |sweet| %>
-    <h3><%= link_to sweet, sweet_path(sweet) %></h3><br>
+    <h3><%= link_to sweet.name, sweet_path(sweet) %></h3><br>
     <% end %>
 
 
